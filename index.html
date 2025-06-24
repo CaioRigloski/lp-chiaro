@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Use Chiaro</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
@@ -17,7 +21,7 @@
     </div>
 
     <nav class="justify-self-end pr-[40px]">
-      <ul class="text-white text-decoration-none list-style-none flex gap-[40px] text-[14.4pt]">
+      <ul class="text-white text-decoration-none list-style-none flex gap-[40px] text-[14.4pt] uppercase">
         <li><a href="#about">Sobre</a></li>
         <li><a href="#contact">Contato</a></li>
         <li><a href="#eu-quero">Eu quero</a></li>
@@ -27,14 +31,14 @@
   <main>
     <section class="bg-white w-full h-[1273px] place-items-center">
       <div class="w-[762.7px] leading-[0.7] relative top-[148.4px]">
-        <h1 class="font-[seasons_light] font-seasons-light italic text-[83.90pt] m-0">Atemporal</h1>
+        <h1 class="font-[seasons_light] italic text-[83.90pt] m-0">Atemporal</h1>
         <h1 class="font-[seasons_regular] place-self-end text-[83.90pt]">
           <span class="font-[brown] text-[106pt]">&</span><span class="font-[75.5pt]">clássica</span>
         </h1>
       </div>
       <div class="relative top-[651.5px] text-center text-[21.3pt] right-[120.4px] justify-self-end">
         <p>Revender é mais do que uma oportunidade.<br/> É fazer parte de um universo elegante,<br/> atemporal e lucrativo.</p>
-        <button type="button" class="uppercase text-white p-3 px-[40px] bg-black text-[21.3pt] mt-[40px] drop-shadow-lg rounded-md font-medium">Saiba mais</button>
+        <button type="button" class="botao-animado uppercase text-white p-3 px-[40px] bg-black text-[21.3pt] mt-[40px] drop-shadow-lg rounded-md font-medium">Saiba mais</button>
       </div>
     </section>
 
@@ -104,6 +108,62 @@
       </div>
 
     </section>
+
+    <section class="bg-black h-[1422.9px] text-white">
+      <h1 class="pl-[179.1px] pt-[151.5px] uppercase text-[42pt] text-center w-fit font-medium">como se tornar<br/> revendedor(a)</h1>
+      <div class="mt-[127px] pl-[28.2px] ml-[88.5px] border-l-1 border-white text-[18.9pt] flex flex-col gap-[65.8px] py-[33.4px] relative">
+        <img src="./public/icons/ponto.png" width="15px" height="15px" class="absolute left-[-8px] top-[-5px]" />
+        <img src="./public/icons/ponto.png" width="15px" height="15px" class="absolute left-[-8px] top-0 bottom-0 m-auto" />
+        <img src="./public/icons/ponto.png" width="15px" height="15px" class="absolute left-[-8px] bottom-[-5px]" />
+        <div>
+          <h2 class="uppercase font-bold">1 - pré cadastro</h2>
+          <p>Faça seu pré-cadastro <a href="#" class="font-medium">clicando aqui</a></p>
+        </div>
+        <div>
+          <h2 class="uppercase font-bold">2 - confirmação</h2>
+          <p>Após a aprovação do cadastro, você receberá um e-mail<br/> com login e senha para acessar o material exclusivo.</p>
+        </div>
+        <div">
+          <h2 class="uppercase font-bold">3 - seu primeiro pedido</h2>
+          <p>Aguarde o contato da loja para realizar seu primeiro<br/> pedido e receber sua maleta com as peças selecionadas.</p>
+        </div>
+      </div>
+      <button type="button" class="botao-animado uppercase p-3 px-[40px] bg-white text-black text-[21.3pt] mt-[243.9px] ml-[121px] drop-shadow-lg rounded-md font-medium">Cadastre-se agora</button>
+    </section>
+    <footer class="bg-black h-[266.4px]">
+      <div class="h-[147.5px] bg-white mb-[118.8px] flex text-[20pt] place-items-center gap-[134px] justify-center">
+        <div class="max-w-[179.1px] max-h-[147.5px] flex items-center justify-center">
+          <img src="./public/images/logo.jpeg" alt="Logo Chiaro" class="w-fit h-fit object-contain mix-blend-exclusion"/>
+        </div>
+        <div class="grid grid-cols-3 gap-x-[134px]">
+          <div class="flex flex-col">
+            <a href="#">Quem somos</a>
+            <a href="#">Termos e condições</a>
+          </div>
+          <div class="flex flex-col">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Ajuda</a>
+          </div>
+          <div>
+            <p>Contato</p>
+            <a href="mailto://chiarojoiasfinas@gmail.com">chiarojoiasfinas@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </main>
 </body>
 </html>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate__bounceIn');
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  document.querySelectorAll('.botao-animado').forEach((el) => observer.observe(el));
+</script>
