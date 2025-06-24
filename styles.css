@@ -1,0 +1,17 @@
+@import './fonts.css';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.text-seasons {
+  font-family: 'TheSeasonsLight';
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+}
