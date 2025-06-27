@@ -12,7 +12,32 @@
 
 @font-face {
   font-family: 'BrownSugar';
-  src: url('public/fonts/brown-sugar.ttf') format('truetype');
+  src: url('public/fonts/BrownSugar/brown-sugar.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Baskerville';
+  src: url('public/fonts/Baskerville/Baskervville-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('public/fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Antonio';
+  src: url('public/fonts/Antonio/Antonio-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DMSerifDisplay';
+  src: url('public/fonts/DMSerifDisplay/DMSerifDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url('public/fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
@@ -30,5 +55,5 @@
 
 @font-face {
   font-family: 'BodyGrotesque';
-  src: url('public/fonts/BodyGrotesque/1.Body-Grotesque-Slim-Bold-trial.ttf') format('opentype');
+  src: url('public/fonts/BodyGrotesque/2.Body-Grotesque-Bold-trial.ttf') format('opentype');
 }

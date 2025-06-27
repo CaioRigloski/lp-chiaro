@@ -8,20 +8,21 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+   <link href="./output.css" rel="stylesheet">
 </head>
-<body>
+<body style="font-family: Arial, Helvetica, sans-serif;">
   <header class="grid grid-cols-3 w-full h-[108.3px] bg-black text-center items-center relative top-[54.7px]">
     <div class="max-w-[84.7px] max-h-[92px] flex items-center justify-center">
       <img src="./public/images/logo.jpeg" alt="Logo Chiaro" class="w-fit h-fit object-contain"/>
     </div>
     
     <div class="text-white text-[29.4pt] italic">
-      <h2>Use Chiaro</h2>
+      <h2 style="font-family: Baskerville;">Use Chiaro</h2>
     </div>
 
     <nav class="justify-self-end pr-[40px]">
-      <ul class="text-white text-decoration-none list-style-none flex gap-[40px] text-[14.4pt] uppercase">
+      <ul class="text-white text-decoration-none list-style-none flex gap-[40px] text-[14.4pt] uppercase" style="font-family: BodyGrotesque;">
         <li><a href="#about">Sobre</a></li>
         <li><a href="#contact">Contato</a></li>
         <li><a href="#eu-quero">Eu quero</a></li>
@@ -31,20 +32,20 @@
   <main>
     <section class="bg-white w-full h-[1273px] place-items-center">
       <div class="w-[762.7px] leading-[0.7] relative top-[148.4px]">
-        <h1 class="font-[seasons_light] italic text-[83.90pt] m-0">Atemporal</h1>
-        <h1 class="font-[seasons_regular] place-self-end text-[83.90pt]">
-          <span class="font-[brown] text-[106pt]">&</span><span class="font-[75.5pt]">clássica</span>
+        <h1 class="italic text-[83.90pt] m-0" style="font-family: TheSeasonsLight;">Atemporal</h1>
+        <h1 class="place-self-end text-[83.90pt]" style="font-family: TheSeasonsRegular;">
+          <span class="text-[106pt]" style="font-family: brownSugar;">&</span><span class="font-[75.5pt]">clássica</span>
         </h1>
       </div>
       <div class="relative top-[651.5px] text-center text-[21.3pt] right-[120.4px] justify-self-end">
-        <p>Revender é mais do que uma oportunidade.<br/> É fazer parte de um universo elegante,<br/> atemporal e lucrativo.</p>
+        <p class="italic">Revender é mais do que uma oportunidade.<br/> É fazer parte de um universo elegante,<br/> atemporal e lucrativo.</p>
         <button type="button" class="botao-animado uppercase text-white p-3 px-[40px] bg-black text-[21.3pt] mt-[40px] drop-shadow-lg rounded-md font-medium">Saiba mais</button>
       </div>
     </section>
 
     <section class="h-[982px] bg-black text-white text-[24pt]">
         <div class="relative top-[247.4px] px-[73px] pb-[73px]">
-          <h1 class="text-[49pt]">Materiais exclusivos para<br/> transformar estilo em resultado</h1>
+          <h1 class="text-[49pt] font-bold" style="font-family: PlayfairDisplay;">Materiais exclusivos para<br/> transformar estilo em resultado</h1>
           <h2>Ao se tornar revendedora Use Chiaro, você recebe:</h2>
           <ul class="pl-[42.3px] pt-[100px] pb-[50px] list-disc">
             <li>Fotos profissionais das joias para divulgar nas redes sociais</li>
@@ -59,12 +60,12 @@
 
     <section class="h-[1066px]">
       <div class="pt-[169.4px] text-center place-items-center">
-        <h1 class="text-[75.7pt] font-medium uppercase">feedback</h1>
+        <h1 class="text-[75.7pt] font-medium uppercase font-bold tracking-tighter" style="font-family: Antonio;">feedback</h1>
         <div class="rounded-full w-[370px] border-2">
-          <p class="text-[19pt] italic font-medium">clientes</p>
+          <p class="text-[19pt] italic font-medium tracking-tighter" style="font-family: DMSerifDisplay;">clientes</p>
         </div>
 
-        <div class="grid grid-rows-2 grid-cols-2 pt-[75.4px] items-center gap-[109.3px]">
+        <div class="grid grid-rows-2 grid-cols-2 pt-[75.4px] items-center gap-[109.3px]" style="font-family: Raleway;">
           <div class="text-[16pt]">
             <div class="font-medium">
               <div class="inline-flex w-full justify-between">
@@ -110,7 +111,7 @@
     </section>
 
     <section class="bg-black h-[1422.9px] text-white">
-      <h1 class="pl-[179.1px] pt-[151.5px] uppercase text-[42pt] text-center w-fit font-medium">como se tornar<br/> revendedor(a)</h1>
+      <h1 class="pl-[179.1px] pt-[151.5px] uppercase text-[42pt] text-center w-fit font-medium" style="font-family: PlayfairDisplay;">como se tornar<br/> revendedor(a)</h1>
       <div class="mt-[127px] pl-[28.2px] ml-[88.5px] border-l-1 border-white text-[18.9pt] flex flex-col gap-[65.8px] py-[33.4px] relative">
         <img src="./public/icons/ponto.png" width="15px" height="15px" class="absolute left-[-8px] top-[-5px]" />
         <img src="./public/icons/ponto.png" width="15px" height="15px" class="absolute left-[-8px] top-0 bottom-0 m-auto" />
@@ -130,7 +131,7 @@
       </div>
       <button type="button" class="botao-animado uppercase p-3 px-[40px] bg-white text-black text-[21.3pt] mt-[243.9px] ml-[121px] drop-shadow-lg rounded-md font-medium">Cadastre-se agora</button>
     </section>
-    <footer class="bg-black h-[266.4px]">
+    <footer class="bg-black h-[266.4px]" style="font-family: PlayfairDisplay;">
       <div class="h-[147.5px] bg-white mb-[118.8px] flex text-[20pt] place-items-center gap-[134px] justify-center">
         <div class="max-w-[179.1px] max-h-[147.5px] flex items-center justify-center">
           <img src="./public/images/logo.jpeg" alt="Logo Chiaro" class="w-fit h-fit object-contain mix-blend-exclusion"/>
