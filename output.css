@@ -180,6 +180,9 @@
   .top-\[-5px\] {
     top: -5px;
   }
+  .top-\[-250px\] {
+    top: -250px;
+  }
   .top-\[54\.7px\] {
     top: 54.7px;
   }
@@ -189,8 +192,20 @@
   .top-\[247\.4px\] {
     top: 247.4px;
   }
+  .top-\[311\.4px\] {
+    top: 311.4px;
+  }
+  .top-\[558\.4px\] {
+    top: 558.4px;
+  }
   .top-\[651\.5px\] {
     top: 651.5px;
+  }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+  .right-\[-209px\] {
+    right: -209px;
   }
   .right-\[120\.4px\] {
     right: 120.4px;
@@ -200,6 +215,9 @@
   }
   .bottom-\[-5px\] {
     bottom: -5px;
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
   }
   .left-\[-8px\] {
     left: -8px;
@@ -291,6 +309,9 @@
   .max-w-\[179\.1px\] {
     max-width: 179.1px;
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .list-disc {
     list-style-type: disc;
   }
@@ -342,6 +363,15 @@
   .justify-self-end {
     justify-self: flex-end;
   }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -367,6 +397,9 @@
   }
   .object-contain {
     object-fit: contain;
+  }
+  .object-none {
+    object-fit: none;
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
@@ -397,9 +430,6 @@
   }
   .pb-\[50px\] {
     padding-bottom: 50px;
-  }
-  .pb-\[73px\] {
-    padding-bottom: 73px;
   }
   .pl-\[28\.2px\] {
     padding-left: 28.2px;

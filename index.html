@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
   <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
    <link href="./output.css" rel="stylesheet">
 </head>
-<body style="font-family: Arial, Helvetica, sans-serif;">
+<body style="font-family: Arial, Helvetica, sans-serif;" class="relative overflow-x-hidden">
   <header class="grid grid-cols-3 w-full h-[108.3px] bg-black text-center items-center relative top-[54.7px]">
     <div class="max-w-[84.7px] max-h-[92px] flex items-center justify-center">
       <img src="./public/images/logo.jpeg" alt="Logo Chiaro" class="w-fit h-fit object-contain"/>
@@ -23,9 +23,9 @@
 
     <nav class="justify-self-end pr-[40px]">
       <ul class="text-white text-decoration-none list-style-none flex gap-[40px] text-[14.4pt] uppercase" style="font-family: BodyGrotesque;">
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#contact">Contato</a></li>
-        <li><a href="#eu-quero">Eu quero</a></li>
+        <li><a href="#saiba-mais">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#cadastro">Eu quero</a></li>
       </ul>
     </nav>
   </header>
@@ -39,12 +39,18 @@
       </div>
       <div class="relative top-[651.5px] text-center text-[21.3pt] right-[120.4px] justify-self-end">
         <p class="italic">Revender é mais do que uma oportunidade.<br/> É fazer parte de um universo elegante,<br/> atemporal e lucrativo.</p>
-        <button type="button" class="botao-animado uppercase text-white p-3 px-[40px] bg-black text-[21.3pt] mt-[40px] drop-shadow-lg rounded-md font-medium">Saiba mais</button>
+
+        <a href="#saiba-mais">
+          <button type="button" class="botao-animado uppercase text-white p-3 px-[40px] bg-black text-[21.3pt] mt-[40px] drop-shadow-lg rounded-md font-medium cursor-pointer">Saiba mais</button>
+        </a>
       </div>
     </section>
 
-    <section class="h-[982px] bg-black text-white text-[24pt]">
-        <div class="relative top-[247.4px] px-[73px] pb-[73px]">
+    <img src="./public/images/IMG_5893.png" width="536.7px" height="309.8" class="absolute right-[-209px] top-[311.4px] object-none" />
+    <img src="./public/images/IMG_5891.png" width="639" height="857" class="absolute left-0 top-[558.4px] object-none"/>
+
+    <section id="saiba-mais" class="h-[982px] bg-black text-white text-[24pt]">
+        <div class="relative top-[247.4px] px-[73px]">
           <h1 class="text-[49pt] font-bold" style="font-family: PlayfairDisplay;">Materiais exclusivos para<br/> transformar estilo em resultado</h1>
           <h2>Ao se tornar revendedora Use Chiaro, você recebe:</h2>
           <ul class="pl-[42.3px] pt-[100px] pb-[50px] list-disc">
@@ -58,7 +64,8 @@
         </div>
     </section>
 
-    <section class="h-[1066px]">
+    <section class="h-[1066px] relative overflow-hidden">
+      <img src="./public/images/IMG_5894.png" width="968" height="auto" class="absolute left-0 top-[-250px] object-none" />
       <div class="pt-[169.4px] text-center place-items-center">
         <h1 class="text-[75.7pt] font-medium uppercase font-bold tracking-tighter" style="font-family: Antonio;">feedback</h1>
         <div class="rounded-full w-[370px] border-2">
@@ -110,7 +117,8 @@
 
     </section>
 
-    <section class="bg-black h-[1422.9px] text-white">
+    <section id="cadastro" class="bg-black h-[1422.9px] text-white relative">
+      <img src="./public/images/IMG_5895.PNG" width="890" height="1154.7" class="absolute object-none right-0 bottom-0"/>
       <h1 class="pl-[179.1px] pt-[151.5px] uppercase text-[42pt] text-center w-fit font-medium" style="font-family: PlayfairDisplay;">como se tornar<br/> revendedor(a)</h1>
       <div class="mt-[127px] pl-[28.2px] ml-[88.5px] border-l-1 border-white text-[18.9pt] flex flex-col gap-[65.8px] py-[33.4px] relative">
         <img src="./public/icons/ponto.png" width="15px" height="15px" class="absolute left-[-8px] top-[-5px]" />
@@ -129,7 +137,7 @@
           <p>Aguarde o contato da loja para realizar seu primeiro<br/> pedido e receber sua maleta com as peças selecionadas.</p>
         </div>
       </div>
-      <button type="button" class="botao-animado uppercase p-3 px-[40px] bg-white text-black text-[21.3pt] mt-[243.9px] ml-[121px] drop-shadow-lg rounded-md font-medium">Cadastre-se agora</button>
+      <button type="button" class="botao-animado uppercase p-3 px-[40px] bg-white text-black text-[21.3pt] mt-[243.9px] ml-[121px] drop-shadow-lg rounded-md font-medium cursor-pointer">Cadastre-se agora</button>
     </section>
     <footer class="bg-black h-[266.4px]" style="font-family: PlayfairDisplay;">
       <div class="h-[147.5px] bg-white mb-[118.8px] flex text-[20pt] place-items-center gap-[134px] justify-center">
@@ -145,7 +153,7 @@
             <a href="#">Política de Privacidade</a>
             <a href="#">Ajuda</a>
           </div>
-          <div>
+          <div id="contato">
             <p>Contato</p>
             <a href="mailto://chiarojoiasfinas@gmail.com">chiarojoiasfinas@gmail.com</a>
           </div>
